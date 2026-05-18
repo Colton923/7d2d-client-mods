@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+
+    <Name value="020_WeaponOverhaul" />
+    <DisplayName value="Weapon Overhaul" />
+    <Description value="Weapon stats, tiers, balance, and new weapons" />
+    <Author value="Colton" />
+    <Version value="0.1.0" />
+
+</xml>

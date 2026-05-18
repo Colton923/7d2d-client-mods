@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+
+    <Name value="060_ProgressionOverhaul" />
+    <DisplayName value="Progression Overhaul" />
+    <Description value="Skills, perks, attributes, and XP curves" />
+    <Author value="Colton" />
+    <Version value="0.1.0" />
+
+</xml>

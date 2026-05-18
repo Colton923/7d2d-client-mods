@@ -1,0 +1,1466 @@
+{
+  "rarityWeights": {
+    "common": 50,
+    "modified": 30,
+    "superior": 15,
+    "legendary": 5
+  },
+  "rarityByQuality": {
+    "1": {
+      "common": 80,
+      "modified": 20,
+      "superior": 0,
+      "legendary": 0
+    },
+    "2": {
+      "common": 60,
+      "modified": 30,
+      "superior": 10,
+      "legendary": 0
+    },
+    "3": {
+      "common": 40,
+      "modified": 35,
+      "superior": 20,
+      "legendary": 5
+    },
+    "4": {
+      "common": 20,
+      "modified": 30,
+      "superior": 35,
+      "legendary": 15
+    },
+    "5": {
+      "common": 5,
+      "modified": 25,
+      "superior": 40,
+      "legendary": 30
+    },
+    "6": {
+      "common": 0,
+      "modified": 10,
+      "superior": 40,
+      "legendary": 50
+    }
+  },
+  "rarityTraitCounts": {
+    "common": 0,
+    "modified": 1,
+    "superior": 2,
+    "legendary": 3
+  },
+  "prefixes": [
+    {
+      "name": "Heavy",
+      "color": "8888FF",
+      "effects": [
+        {
+          "stat": "PhysicalDamageResist",
+          "op": "perc_add",
+          "minValue": 0.05,
+          "maxValue": 0.2
+        }
+      ],
+      "validTypes": [
+        "armor"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "Insulated",
+      "color": "FF9999",
+      "effects": [
+        {
+          "stat": "ElementalDamageResist",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.3
+        }
+      ],
+      "validTypes": [
+        "armor"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "Athletic",
+      "color": "99FF99",
+      "effects": [
+        {
+          "stat": "RunSpeed",
+          "op": "perc_add",
+          "minValue": 0.05,
+          "maxValue": 0.15
+        }
+      ],
+      "validTypes": [
+        "armor"
+      ],
+      "weight": 8
+    },
+    {
+      "name": "Acrobatic",
+      "color": "FFCC99",
+      "effects": [
+        {
+          "stat": "JumpStrength",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.35
+        }
+      ],
+      "validTypes": [
+        "armor"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "Haggler's",
+      "color": "FFD700",
+      "effects": [
+        {
+          "stat": "BarteringBuying",
+          "op": "perc_add",
+          "minValue": -0.05,
+          "maxValue": -0.15
+        },
+        {
+          "stat": "BarteringSelling",
+          "op": "perc_add",
+          "minValue": 0.05,
+          "maxValue": 0.15
+        }
+      ],
+      "validTypes": [
+        "armor"
+      ],
+      "weight": 8
+    },
+    {
+      "name": "Polar",
+      "color": "AADDFF",
+      "effects": [
+        {
+          "stat": "HypothermalResist",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.35
+        }
+      ],
+      "validTypes": [
+        "armor"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "Asbestos",
+      "color": "FF6644",
+      "effects": [
+        {
+          "stat": "HyperthermalResist",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.35
+        }
+      ],
+      "validTypes": [
+        "armor"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "Marksman's",
+      "color": "4488FF",
+      "effects": [
+        {
+          "stat": "SpreadMultiplierAiming",
+          "op": "perc_add",
+          "minValue": -0.05,
+          "maxValue": -0.15
+        },
+        {
+          "stat": "MaxRange",
+          "op": "perc_add",
+          "minValue": 0.05,
+          "maxValue": 0.15
+        },
+        {
+          "stat": "DamageFalloffRange",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.25
+        }
+      ],
+      "validTypes": [
+        "ranged"
+      ],
+      "weight": 4
+    },
+    {
+      "name": "Berserker's",
+      "color": "FF1111",
+      "effects": [
+        {
+          "stat": "EntityDamage",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.2
+        },
+        {
+          "stat": "AttacksPerMinute",
+          "op": "perc_add",
+          "minValue": 0.05,
+          "maxValue": 0.12
+        },
+        {
+          "stat": "StaminaLoss",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.2
+        }
+      ],
+      "validTypes": [
+        "melee"
+      ],
+      "weight": 4
+    },
+    {
+      "name": "Devastating",
+      "color": "FF5555",
+      "effects": [
+        {
+          "stat": "EntityDamage",
+          "op": "perc_add",
+          "minValue": 0.08,
+          "maxValue": 0.25
+        }
+      ],
+      "validTypes": [
+        "ranged",
+        "bow",
+        "melee",
+        "tool"
+      ],
+      "weight": 8
+    },
+    {
+      "name": "Executioner's",
+      "color": "FF2222",
+      "effects": [
+        {
+          "stat": "CriticalChance",
+          "op": "perc_add",
+          "minValue": 0.05,
+          "maxValue": 0.2
+        }
+      ],
+      "validTypes": [
+        "ranged",
+        "bow",
+        "melee"
+      ],
+      "weight": 6
+    },
+    {
+      "name": "Dismembering",
+      "color": "CC0000",
+      "effects": [
+        {
+          "stat": "DismemberChance",
+          "op": "perc_add",
+          "minValue": 0.05,
+          "maxValue": 0.2
+        }
+      ],
+      "validTypes": [
+        "melee",
+        "ranged"
+      ],
+      "weight": 6
+    },
+    {
+      "name": "Vampiric",
+      "color": "FF0000",
+      "effects": [
+        {
+          "stat": "HealthSteal",
+          "op": "base_add",
+          "minValue": 1.0,
+          "maxValue": 5.0
+        }
+      ],
+      "validTypes": [
+        "melee"
+      ],
+      "weight": 5
+    },
+    {
+      "name": "Focused",
+      "color": "77AAFF",
+      "effects": [
+        {
+          "stat": "BreathHoldDuration",
+          "op": "perc_add",
+          "minValue": 0.15,
+          "maxValue": 0.5
+        }
+      ],
+      "validTypes": [
+        "ranged",
+        "bow"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "Gunslinger's",
+      "color": "FFBB44",
+      "effects": [
+        {
+          "stat": "SpreadMultiplierHip",
+          "op": "perc_add",
+          "minValue": -0.1,
+          "maxValue": -0.3
+        }
+      ],
+      "validTypes": [
+        "ranged"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "Sweeping",
+      "color": "DDAA88",
+      "effects": [
+        {
+          "stat": "SphereCastRadius",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.3
+        }
+      ],
+      "validTypes": [
+        "melee"
+      ],
+      "weight": 8
+    },
+    {
+      "name": "Lacerating",
+      "color": "FF4488",
+      "effects": [
+        {
+          "stat": "GrazeDamageMultiplier",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.35
+        }
+      ],
+      "validTypes": [
+        "ranged",
+        "bow"
+      ],
+      "weight": 8
+    },
+    {
+      "name": "Controlled",
+      "color": "88AACC",
+      "effects": [
+        {
+          "stat": "IncrementalSpreadMultiplier",
+          "op": "perc_add",
+          "minValue": -0.1,
+          "maxValue": -0.3
+        }
+      ],
+      "validTypes": [
+        "ranged"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "Armor-Piercing",
+      "color": "CCAA33",
+      "effects": [
+        {
+          "stat": "TargetArmor",
+          "op": "perc_add",
+          "minValue": -0.05,
+          "maxValue": -0.2
+        }
+      ],
+      "validTypes": [
+        "ranged",
+        "bow",
+        "melee"
+      ],
+      "weight": 6
+    },
+    {
+      "name": "Savage",
+      "color": "FF3333",
+      "effects": [
+        {
+          "stat": "EntityDamage",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.28
+        }
+      ],
+      "validTypes": [
+        "melee"
+      ],
+      "weight": 8
+    },
+    {
+      "name": "Swift",
+      "color": "55AAFF",
+      "effects": [
+        {
+          "stat": "AttacksPerMinute",
+          "op": "perc_add",
+          "minValue": 0.05,
+          "maxValue": 0.15
+        }
+      ],
+      "validTypes": [
+        "melee",
+        "tool"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "Venomous",
+      "color": "33DD33",
+      "effects": [
+        {
+          "stat": "EntityDamage",
+          "op": "perc_add",
+          "minValue": 0.05,
+          "maxValue": 0.15
+        }
+      ],
+      "validTypes": [
+        "melee",
+        "bow"
+      ],
+      "weight": 8
+    },
+    {
+      "name": "Relentless",
+      "color": "FF6655",
+      "effects": [
+        {
+          "stat": "AttacksPerMinute",
+          "op": "perc_add",
+          "minValue": 0.05,
+          "maxValue": 0.18
+        }
+      ],
+      "validTypes": [
+        "melee"
+      ],
+      "weight": 8
+    },
+    {
+      "name": "Reaching",
+      "color": "FFCCFF",
+      "effects": [
+        {
+          "stat": "MaxRange",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.3
+        }
+      ],
+      "validTypes": [
+        "melee"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "Precise",
+      "color": "55FF55",
+      "effects": [
+        {
+          "stat": "SpreadMultiplierAiming",
+          "op": "perc_add",
+          "minValue": -0.05,
+          "maxValue": -0.2
+        }
+      ],
+      "validTypes": [
+        "ranged",
+        "bow"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "Rapid",
+      "color": "FFAA55",
+      "effects": [
+        {
+          "stat": "RoundsPerMinute",
+          "op": "perc_add",
+          "minValue": 0.05,
+          "maxValue": 0.15
+        }
+      ],
+      "validTypes": [
+        "ranged",
+        "bow"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "Extended",
+      "color": "55FFFF",
+      "effects": [
+        {
+          "stat": "MagazineSize",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.3
+        }
+      ],
+      "validTypes": [
+        "ranged"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "Tactical",
+      "color": "88CCFF",
+      "effects": [
+        {
+          "stat": "WeaponHandling",
+          "op": "perc_add",
+          "minValue": 0.08,
+          "maxValue": 0.22
+        }
+      ],
+      "validTypes": [
+        "ranged"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "Quickdraw",
+      "color": "FF88FF",
+      "effects": [
+        {
+          "stat": "ReloadSpeedMultiplier",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.3
+        }
+      ],
+      "validTypes": [
+        "ranged"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "Sniper's",
+      "color": "CCCCFF",
+      "effects": [
+        {
+          "stat": "MaxRange",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.3
+        }
+      ],
+      "validTypes": [
+        "ranged",
+        "bow"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "Breaching",
+      "color": "FF8800",
+      "effects": [
+        {
+          "stat": "BlockPenetrationFactor",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.3
+        }
+      ],
+      "validTypes": [
+        "ranged",
+        "bow"
+      ],
+      "weight": 8
+    },
+    {
+      "name": "Volatile",
+      "color": "FFCC00",
+      "effects": [
+        {
+          "stat": "ExplosionRadius",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.35
+        },
+        {
+          "stat": "ExplosionEntityDamage",
+          "op": "perc_add",
+          "minValue": 0.05,
+          "maxValue": 0.2
+        }
+      ],
+      "validTypes": [
+        "ranged"
+      ],
+      "weight": 5
+    },
+    {
+      "name": "Buckshot",
+      "color": "DDBB77",
+      "effects": [
+        {
+          "stat": "RoundRayCount",
+          "op": "base_add",
+          "minValue": 1.0,
+          "maxValue": 3.0
+        },
+        {
+          "stat": "EntityDamage",
+          "op": "perc_add",
+          "minValue": -0.05,
+          "maxValue": -0.1
+        }
+      ],
+      "validTypes": [
+        "ranged"
+      ],
+      "weight": 5
+    },
+    {
+      "name": "Aerodynamic",
+      "color": "AAEEFF",
+      "effects": [
+        {
+          "stat": "ProjectileVelocity",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.3
+        },
+        {
+          "stat": "ProjectileGravity",
+          "op": "perc_add",
+          "minValue": -0.1,
+          "maxValue": -0.25
+        }
+      ],
+      "validTypes": [
+        "bow"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "Silent",
+      "color": "333333",
+      "effects": [
+        {
+          "stat": "NoiseMultiplier",
+          "op": "perc_add",
+          "minValue": -0.1,
+          "maxValue": -0.4
+        }
+      ],
+      "validTypes": [
+        "armor",
+        "melee",
+        "bow"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "Prospector's",
+      "color": "FFEE88",
+      "effects": [
+        {
+          "stat": "HarvestCount",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.35
+        }
+      ],
+      "validTypes": [
+        "tool"
+      ],
+      "weight": 8
+    },
+    {
+      "name": "Sapper's",
+      "color": "CC99FF",
+      "effects": [
+        {
+          "stat": "BlockRange",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.3
+        }
+      ],
+      "validTypes": [
+        "tool"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "Efficient",
+      "color": "88DDAA",
+      "effects": [
+        {
+          "stat": "CraftingIngredientCount",
+          "op": "perc_add",
+          "minValue": -0.05,
+          "maxValue": -0.15
+        }
+      ],
+      "validTypes": [
+        "tool"
+      ],
+      "weight": 8
+    },
+    {
+      "name": "Scrapper's",
+      "color": "BBAA77",
+      "effects": [
+        {
+          "stat": "ScrappingTime",
+          "op": "perc_add",
+          "minValue": -0.1,
+          "maxValue": -0.3
+        }
+      ],
+      "validTypes": [
+        "tool"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "Hardened",
+      "color": "DDAA55",
+      "effects": [
+        {
+          "stat": "BlockDamage",
+          "op": "perc_add",
+          "minValue": 0.08,
+          "maxValue": 0.22
+        }
+      ],
+      "validTypes": [
+        "melee",
+        "tool"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "Lightweight",
+      "color": "AAAAAA",
+      "effects": [
+        {
+          "stat": "WeaponHandling",
+          "op": "perc_add",
+          "minValue": 0.05,
+          "maxValue": 0.2
+        }
+      ],
+      "validTypes": [
+        "ranged",
+        "bow",
+        "melee",
+        "tool"
+      ],
+      "weight": 12
+    },
+    {
+      "name": "Reinforced",
+      "color": "BBBBBB",
+      "effects": [
+        {
+          "stat": "DegradationMax",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.3
+        }
+      ],
+      "validTypes": [
+        "ranged",
+        "melee",
+        "tool",
+        "armor"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "Scholar's",
+      "color": "99CCFF",
+      "effects": [
+        {
+          "stat": "PlayerExpGain",
+          "op": "perc_add",
+          "minValue": 0.05,
+          "maxValue": 0.2
+        }
+      ],
+      "validTypes": [
+        "armor",
+        "tool"
+      ],
+      "weight": 8
+    }
+  ],
+  "suffixes": [
+    {
+      "name": "of Slaying",
+      "color": "FF3344",
+      "effects": [
+        {
+          "stat": "DamageBonus",
+          "op": "perc_add",
+          "minValue": 0.05,
+          "maxValue": 0.18
+        }
+      ],
+      "validTypes": [
+        "ranged",
+        "bow",
+        "melee"
+      ],
+      "weight": 6
+    },
+    {
+      "name": "of Cleaving",
+      "color": "DD4400",
+      "effects": [
+        {
+          "stat": "EntityPenetrationCount",
+          "op": "base_add",
+          "minValue": 1.0,
+          "maxValue": 2.0
+        }
+      ],
+      "validTypes": [
+        "melee"
+      ],
+      "weight": 5
+    },
+    {
+      "name": "of Overcharge",
+      "color": "FFEE22",
+      "effects": [
+        {
+          "stat": "ModPowerBonus",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.3
+        }
+      ],
+      "validTypes": [
+        "ranged",
+        "bow",
+        "melee",
+        "tool"
+      ],
+      "weight": 8
+    },
+    {
+      "name": "of Modularity",
+      "color": "FFAA33",
+      "effects": [
+        {
+          "stat": "ModSlots",
+          "op": "base_add",
+          "minValue": 1.0,
+          "maxValue": 1.0
+        }
+      ],
+      "validTypes": [
+        "ranged",
+        "bow",
+        "melee",
+        "tool"
+      ],
+      "weight": 3
+    },
+    {
+      "name": "of Restoration",
+      "color": "88FFAA",
+      "effects": [
+        {
+          "stat": "RepairAmount",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.35
+        },
+        {
+          "stat": "RepairTime",
+          "op": "perc_add",
+          "minValue": -0.05,
+          "maxValue": -0.2
+        }
+      ],
+      "validTypes": [
+        "ranged",
+        "bow",
+        "melee",
+        "tool",
+        "armor"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "of Yield",
+      "color": "55DD55",
+      "effects": [
+        {
+          "stat": "CraftingOutputCount",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.3
+        }
+      ],
+      "validTypes": [
+        "tool"
+      ],
+      "weight": 8
+    },
+    {
+      "name": "of Mending",
+      "color": "AAFFCC",
+      "effects": [
+        {
+          "stat": "BlockRepairAmount",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.3
+        }
+      ],
+      "validTypes": [
+        "tool"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "of Endurance",
+      "color": "AAAAFF",
+      "effects": [
+        {
+          "stat": "DegradationMax",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.3
+        }
+      ],
+      "validTypes": [
+        "ranged",
+        "bow",
+        "melee",
+        "tool",
+        "armor"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "of Fortitude",
+      "color": "CCAA88",
+      "effects": [
+        {
+          "stat": "DegradationPerUse",
+          "op": "perc_add",
+          "minValue": -0.05,
+          "maxValue": -0.18
+        }
+      ],
+      "validTypes": [
+        "ranged",
+        "melee",
+        "tool",
+        "bow"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "of Iron Skin",
+      "color": "7788AA",
+      "effects": [
+        {
+          "stat": "GeneralDamageResist",
+          "op": "perc_add",
+          "minValue": 0.03,
+          "maxValue": 0.12
+        }
+      ],
+      "validTypes": [
+        "armor"
+      ],
+      "weight": 6
+    },
+    {
+      "name": "of Bargaining",
+      "color": "EEDD55",
+      "effects": [
+        {
+          "stat": "EconomicValue",
+          "op": "perc_add",
+          "minValue": 0.15,
+          "maxValue": 0.5
+        }
+      ],
+      "validTypes": [
+        "ranged",
+        "bow",
+        "melee",
+        "tool",
+        "armor"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "of Abundance",
+      "color": "77CC55",
+      "effects": [
+        {
+          "stat": "LootQuantity",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.3
+        }
+      ],
+      "validTypes": [
+        "tool",
+        "armor"
+      ],
+      "weight": 8
+    },
+    {
+      "name": "of Craftsmanship",
+      "color": "99DDBB",
+      "effects": [
+        {
+          "stat": "CraftingTime",
+          "op": "perc_add",
+          "minValue": -0.05,
+          "maxValue": -0.2
+        }
+      ],
+      "validTypes": [
+        "tool",
+        "armor"
+      ],
+      "weight": 8
+    },
+    {
+      "name": "of Looting",
+      "color": "FFDD44",
+      "effects": [
+        {
+          "stat": "LootStage",
+          "op": "base_add",
+          "minValue": 5.0,
+          "maxValue": 25.0
+        }
+      ],
+      "validTypes": [
+        "armor",
+        "tool"
+      ],
+      "weight": 8
+    },
+    {
+      "name": "of Treasure Hunting",
+      "color": "FFD700",
+      "effects": [
+        {
+          "stat": "TreasureRadius",
+          "op": "perc_add",
+          "minValue": -0.1,
+          "maxValue": -0.3
+        },
+        {
+          "stat": "TreasureBlocksPerReduction",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.3
+        }
+      ],
+      "validTypes": [
+        "tool"
+      ],
+      "weight": 8
+    },
+    {
+      "name": "of the Artisan",
+      "color": "FFFFAA",
+      "effects": [
+        {
+          "stat": "BlockDamage",
+          "op": "perc_add",
+          "minValue": 0.08,
+          "maxValue": 0.2
+        }
+      ],
+      "validTypes": [
+        "tool"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "of the Locksmith",
+      "color": "CCBB88",
+      "effects": [
+        {
+          "stat": "LockPickTime",
+          "op": "perc_add",
+          "minValue": -0.1,
+          "maxValue": -0.35
+        },
+        {
+          "stat": "LockPickBreakChance",
+          "op": "perc_add",
+          "minValue": -0.1,
+          "maxValue": -0.3
+        }
+      ],
+      "validTypes": [
+        "tool"
+      ],
+      "weight": 8
+    },
+    {
+      "name": "of Scavenging",
+      "color": "DDCC55",
+      "effects": [
+        {
+          "stat": "ScavengingTime",
+          "op": "perc_add",
+          "minValue": -0.1,
+          "maxValue": -0.3
+        },
+        {
+          "stat": "ScavengingItemCount",
+          "op": "perc_add",
+          "minValue": 0.05,
+          "maxValue": 0.2
+        }
+      ],
+      "validTypes": [
+        "tool",
+        "armor"
+      ],
+      "weight": 8
+    },
+    {
+      "name": "of Hauling",
+      "color": "AA8855",
+      "effects": [
+        {
+          "stat": "CarryCapacity",
+          "op": "perc_add",
+          "minValue": 0.05,
+          "maxValue": 0.15
+        }
+      ],
+      "validTypes": [
+        "armor"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "of the Questor",
+      "color": "FFCC33",
+      "effects": [
+        {
+          "stat": "QuestBonusItemReward",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.3
+        },
+        {
+          "stat": "QuestRewardOptionCount",
+          "op": "base_add",
+          "minValue": 1.0,
+          "maxValue": 1.0
+        }
+      ],
+      "validTypes": [
+        "armor"
+      ],
+      "weight": 5
+    },
+    {
+      "name": "of the Trader",
+      "color": "FFD700",
+      "effects": [
+        {
+          "stat": "TraderStage",
+          "op": "base_add",
+          "minValue": 5.0,
+          "maxValue": 20.0
+        }
+      ],
+      "validTypes": [
+        "armor"
+      ],
+      "weight": 6
+    },
+    {
+      "name": "of Illumination",
+      "color": "FFFFCC",
+      "effects": [
+        {
+          "stat": "LightIntensity",
+          "op": "perc_add",
+          "minValue": 0.15,
+          "maxValue": 0.5
+        }
+      ],
+      "validTypes": [
+        "armor",
+        "tool"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "of Efficiency",
+      "color": "55FF55",
+      "effects": [
+        {
+          "stat": "StaminaLoss",
+          "op": "perc_add",
+          "minValue": -0.05,
+          "maxValue": -0.15
+        }
+      ],
+      "validTypes": [
+        "melee",
+        "tool",
+        "bow"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "of Momentum",
+      "color": "FFCC55",
+      "effects": [
+        {
+          "stat": "StaminaGain",
+          "op": "perc_add",
+          "minValue": 0.05,
+          "maxValue": 0.18
+        }
+      ],
+      "validTypes": [
+        "melee",
+        "tool"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "of the Wind",
+      "color": "88FFFF",
+      "effects": [
+        {
+          "stat": "WalkSpeed",
+          "op": "perc_add",
+          "minValue": 0.05,
+          "maxValue": 0.15
+        }
+      ],
+      "validTypes": [
+        "armor"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "of Shadows",
+      "color": "444444",
+      "effects": [
+        {
+          "stat": "CrouchSpeed",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.35
+        }
+      ],
+      "validTypes": [
+        "armor",
+        "bow"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "of Stability",
+      "color": "FFAAFF",
+      "effects": [
+        {
+          "stat": "KickDegreesVerticalMax",
+          "op": "perc_add",
+          "minValue": -0.05,
+          "maxValue": -0.2
+        },
+        {
+          "stat": "KickDegreesHorizontalMax",
+          "op": "perc_add",
+          "minValue": -0.05,
+          "maxValue": -0.2
+        }
+      ],
+      "validTypes": [
+        "ranged"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "of the Hawk",
+      "color": "66DDFF",
+      "effects": [
+        {
+          "stat": "SpreadMultiplierAiming",
+          "op": "perc_add",
+          "minValue": -0.05,
+          "maxValue": -0.22
+        }
+      ],
+      "validTypes": [
+        "ranged",
+        "bow"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "of Penetration",
+      "color": "DD5555",
+      "effects": [
+        {
+          "stat": "BlockDamage",
+          "op": "perc_add",
+          "minValue": 0.05,
+          "maxValue": 0.2
+        }
+      ],
+      "validTypes": [
+        "ranged",
+        "bow"
+      ],
+      "weight": 8
+    },
+    {
+      "name": "of Vitality",
+      "color": "FF4444",
+      "effects": [
+        {
+          "stat": "HealthMax",
+          "op": "base_add",
+          "minValue": 10.0,
+          "maxValue": 40.0
+        }
+      ],
+      "validTypes": [
+        "armor"
+      ],
+      "weight": 8
+    },
+    {
+      "name": "of Nourishment",
+      "color": "DDAA44",
+      "effects": [
+        {
+          "stat": "FoodLoss",
+          "op": "perc_add",
+          "minValue": -0.05,
+          "maxValue": -0.2
+        }
+      ],
+      "validTypes": [
+        "armor"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "of Hydration",
+      "color": "44BBFF",
+      "effects": [
+        {
+          "stat": "WaterLoss",
+          "op": "perc_add",
+          "minValue": -0.05,
+          "maxValue": -0.2
+        }
+      ],
+      "validTypes": [
+        "armor"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "of Featherfall",
+      "color": "DDFFFF",
+      "effects": [
+        {
+          "stat": "FallDamageReduction",
+          "op": "perc_add",
+          "minValue": 0.15,
+          "maxValue": 0.45
+        }
+      ],
+      "validTypes": [
+        "armor"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "of Rejuvenation",
+      "color": "FF8888",
+      "effects": [
+        {
+          "stat": "StaminaChangeOT",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.35
+        }
+      ],
+      "validTypes": [
+        "armor"
+      ],
+      "weight": 8
+    },
+    {
+      "name": "of Immunity",
+      "color": "AAFFAA",
+      "effects": [
+        {
+          "stat": "BuffResistance",
+          "op": "perc_add",
+          "minValue": 0.1,
+          "maxValue": 0.4
+        }
+      ],
+      "validTypes": [
+        "armor"
+      ],
+      "weight": 10
+    },
+    {
+      "name": "of the Titan",
+      "color": "FF5555",
+      "effects": [
+        {
+          "stat": "StaminaMax",
+          "op": "base_add",
+          "minValue": 10.0,
+          "maxValue": 30.0
+        }
+      ],
+      "validTypes": [
+        "armor",
+        "melee",
+        "tool"
+      ],
+      "weight": 8
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+
+    <Name value="025_TraitSystem" />
+    <DisplayName value="PoE-Style Trait System" />
+    <Description value="Injects randomized weapon and tool traits (prefixes/suffixes) dynamically using Harmony." />
+    <Author value="Colton" />
+    <Version value="1.0.0" />
+
+</xml>
