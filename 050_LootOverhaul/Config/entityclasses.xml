@@ -1,0 +1,72 @@
+<configs>
+	<!-- ============================================================
+	     ZOMBIE LOOT DROP PROBABILITY OVERHAUL
+	     
+	     Vanilla: Normal=4%, Feral=4%, Charged=10%, Infernal=disabled
+	     PoE:     Normal=40%, Feral=55%, Charged=80%, Infernal=100%
+	     
+	     With 10-20x more zombies, 40% drop rate means you get roughly
+	     8 loot bags per 20 kills — constant reward feedback.
+	     ============================================================ -->
+
+	<!-- Normal zombie template: 4% → 40% -->
+	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='LootDropProb']/@value">.40</set>
+
+	<!-- ALL feral zombies: 4% → 55% (use AllowMultiple since many ferals have this) -->
+	<!-- We target every LootDropProb that's currently .04 and on a feral entity -->
+	<!-- Since xpath can't easily distinguish, we set the template and individual overrides -->
+
+	<!-- Feral Arlene -->
+	<set xpath="/entity_classes/entity_class[@name='zombieArleneFeral']/property[@name='LootDropProb']/@value">.55</set>
+	<!-- Feral Marlene -->
+	<set xpath="/entity_classes/entity_class[@name='zombieMarleneFeral']/property[@name='LootDropProb']/@value">.55</set>
+	<!-- Feral PartyGirl -->
+	<set xpath="/entity_classes/entity_class[@name='zombiePartyGirlFeral']/property[@name='LootDropProb']/@value">.55</set>
+	<!-- Feral Nurse -->
+	<set xpath="/entity_classes/entity_class[@name='zombieNurseFeral']/property[@name='LootDropProb']/@value">.55</set>
+	<!-- Feral Joe -->
+	<set xpath="/entity_classes/entity_class[@name='zombieJoeFeral']/property[@name='LootDropProb']/@value">.55</set>
+	<!-- Feral Steve -->
+	<set xpath="/entity_classes/entity_class[@name='zombieSteveFeral']/property[@name='LootDropProb']/@value">.55</set>
+	<!-- Feral TomClark -->
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClarkFeral']/property[@name='LootDropProb']/@value">.55</set>
+	<!-- Feral BusinessMan -->
+	<set xpath="/entity_classes/entity_class[@name='zombieBusinessManFeral']/property[@name='LootDropProb']/@value">.55</set>
+	<!-- Feral Boe -->
+	<set xpath="/entity_classes/entity_class[@name='zombieBoeFeral']/property[@name='LootDropProb']/@value">.55</set>
+	<!-- Feral Darlene -->
+	<set xpath="/entity_classes/entity_class[@name='zombieDarleneFeral']/property[@name='LootDropProb']/@value">.55</set>
+	<!-- Feral Yo -->
+	<set xpath="/entity_classes/entity_class[@name='zombieYoFeral']/property[@name='LootDropProb']/@value">.55</set>
+	<!-- Feral Moe -->
+	<set xpath="/entity_classes/entity_class[@name='zombieMoeFeral']/property[@name='LootDropProb']/@value">.55</set>
+	<!-- Feral Spider -->
+	<set xpath="/entity_classes/entity_class[@name='zombieSpiderFeral']/property[@name='LootDropProb']/@value">.55</set>
+
+	<!-- ALL charged zombies: 10% → 80% -->
+	<set xpath="/entity_classes/entity_class[@name='zombieArleneCharged']/property[@name='LootDropProb']/@value">.80</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMarleneCharged']/property[@name='LootDropProb']/@value">.80</set>
+	<set xpath="/entity_classes/entity_class[@name='zombiePartyGirlCharged']/property[@name='LootDropProb']/@value">.80</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieNurseCharged']/property[@name='LootDropProb']/@value">.80</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieJoeCharged']/property[@name='LootDropProb']/@value">.80</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSteveCharged']/property[@name='LootDropProb']/@value">.80</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClarkCharged']/property[@name='LootDropProb']/@value">.80</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBusinessManCharged']/property[@name='LootDropProb']/@value">.80</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBoeCharged']/property[@name='LootDropProb']/@value">.80</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieDarleneCharged']/property[@name='LootDropProb']/@value">.80</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieYoCharged']/property[@name='LootDropProb']/@value">.80</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSpiderCharged']/property[@name='LootDropProb']/@value">.80</set>
+
+
+	<!-- ============================================================
+	     PLAYER INVENTORY — Carry more loot
+	     
+	     BagSize: 45 → 90 (double bag slots)
+	     CarryCapacity: 27 → 45 (more stack weight)
+	     ============================================================ -->
+
+	<!-- These are passive_effects on the playerMale entity class -->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BagSize']/@value">90</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='CarryCapacity']/@value">45</set>
+
+</configs>

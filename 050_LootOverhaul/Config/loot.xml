@@ -1,0 +1,122 @@
+<configs>
+	<!-- ============================================================
+	     POE-STYLE LOOT OVERHAUL
+	     
+	     Philosophy: Killing zombies and looting buildings should feel
+	     rewarding. More drops, more items per drop, more reasons to loot.
+	     
+	     Combined with 10-20x zombie density, this creates a proper
+	     "loot farming" gameplay loop.
+	     ============================================================ -->
+
+
+	<!-- ============================
+	     ZOMBIE LOOT BAGS — More items per drop
+	     Vanilla: count="1" (1 loot group)
+	     New: count="2,4" (2-4 loot groups per bag)
+	     ============================ -->
+
+	<!-- Regular zombie packs -->
+	<set xpath="/lootcontainers/lootcontainer[@name='zPackReg']/@count">2,4</set>
+
+	<!-- Specialized zombie packs — slightly more generous -->
+	<set xpath="/lootcontainers/lootcontainer[@name='zPackNurse']/@count">2,4</set>
+	<set xpath="/lootcontainers/lootcontainer[@name='zPackLab']/@count">2,4</set>
+	<set xpath="/lootcontainers/lootcontainer[@name='zPackUtility']/@count">2,4</set>
+	<set xpath="/lootcontainers/lootcontainer[@name='zPackSoldier']/@count">2,4</set>
+	<set xpath="/lootcontainers/lootcontainer[@name='zPackThug']/@count">2,4</set>
+
+	<!-- Strong/Boss/Plague — jackpot drops -->
+	<set xpath="/lootcontainers/lootcontainer[@name='zPackStrong']/@count">3,5</set>
+	<set xpath="/lootcontainers/lootcontainer[@name='zPackBoss']/@count">3,5</set>
+	<set xpath="/lootcontainers/lootcontainer[@name='zPackPlague']/@count">3,5</set>
+
+
+	<!-- ============================
+	     WEAPON/TOOL CONTAINERS — +1 count
+	     ============================ -->
+
+	<!-- Shotgun Messiah crates: 1 → 2 -->
+	<set xpath="/lootcontainers/lootcontainer[@name='shotgunMessiahCrate']/@count">2</set>
+
+	<!-- Working Stiffs crates: 1 → 2 -->
+	<set xpath="/lootcontainers/lootcontainer[@name='workingStiffsCrate']/@count">2</set>
+
+	<!-- Cars/garage: 1 → 2 -->
+	<set xpath="/lootcontainers/lootcontainer[@name='cars']/@count">2</set>
+	<set xpath="/lootcontainers/lootcontainer[@name='garage']/@count">2</set>
+
+
+	<!-- ============================
+	     MEDICAL CONTAINERS — +1 count
+	     ============================ -->
+
+	<!-- Pop-n-pills crate: 1 → 2 -->
+	<set xpath="/lootcontainers/lootcontainer[@name='popnpillsCrate']/@count">2</set>
+
+	<!-- Medical pill case: 1 → 2 -->
+	<set xpath="/lootcontainers/lootcontainer[@name='medicalPillCase']/@count">2</set>
+
+	<!-- Medical cooler: 1 → 2 -->
+	<set xpath="/lootcontainers/lootcontainer[@name='coolerMedical']/@count">2</set>
+
+
+	<!-- ============================
+	     FOOD CONTAINERS — +1 count
+	     ============================ -->
+
+	<!-- Cupboard: 1 → 2 -->
+	<set xpath="/lootcontainers/lootcontainer[@name='cupboard']/@count">2</set>
+
+	<!-- Shamway crate: 1 → 2 -->
+	<set xpath="/lootcontainers/lootcontainer[@name='shamwayCrate']/@count">2</set>
+
+	<!-- Oven: 1 → 2 -->
+	<set xpath="/lootcontainers/lootcontainer[@name='oven']/@count">2</set>
+
+	<!-- Microwave: 1 → 2 -->
+	<set xpath="/lootcontainers/lootcontainer[@name='microwave']/@count">2</set>
+
+
+	<!-- ============================
+	     SAFES — Jackpot containers, big boost
+	     ============================ -->
+
+	<!-- Gun safe (world): +2 size columns for more space -->
+	<set xpath="/lootcontainers/lootcontainer[@name='gunSafe']/@size">10,9</set>
+
+	<!-- Small safes (world) -->
+	<set xpath="/lootcontainers/lootcontainer[@name='smallSafes']/@size">10,5</set>
+
+
+	<!-- ============================
+	     GENERAL CONTAINERS — Small boost
+	     ============================ -->
+
+	<!-- Lockers: 1 → 2 -->
+	<set xpath="/lootcontainers/lootcontainer[@name='lockers']/@count">2</set>
+
+	<!-- File cabinet: 1 → 2 -->
+	<set xpath="/lootcontainers/lootcontainer[@name='fileCabinet']/@count">2</set>
+
+	<!-- Metal desk: 1 → 2 -->
+	<set xpath="/lootcontainers/lootcontainer[@name='metalDesk']/@count">2</set>
+
+	<!-- Cardboard box: 1 → 2 -->
+	<set xpath="/lootcontainers/lootcontainer[@name='cardboardBox']/@count">2</set>
+
+	<!-- Backpacks (world): 1 → 2 -->
+	<set xpath="/lootcontainers/lootcontainer[@name='cntBackpack']/@count">2</set>
+
+	<!-- Laundry: 1 → 2 -->
+	<set xpath="/lootcontainers/lootcontainer[@name='laundry']/@count">2</set>
+
+	<!-- Purse: 1 → 2 -->
+	<set xpath="/lootcontainers/lootcontainer[@name='purse']/@count">2</set>
+
+	<!-- Shopping cart: 1 → 2 -->
+	<set xpath="/lootcontainers/lootcontainer[@name='shoppingCart']/@count">2</set>
+
+
+
+</configs>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+
+    <Name value="050_LootOverhaul" />
+    <DisplayName value="Loot Overhaul" />
+    <Description value="Loot tables, container contents, and drop rates" />
+    <Author value="Colton" />
+    <Version value="0.1.0" />
+
+</xml>
