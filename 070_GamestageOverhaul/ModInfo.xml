@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+
+    <Name value="070_GamestageOverhaul" />
+    <DisplayName value="Gamestage Overhaul" />
+    <Description value="Difficulty scaling and horde composition" />
+    <Author value="Colton" />
+    <Version value="0.1.0" />
+
+</xml>

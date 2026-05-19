@@ -1,0 +1,19 @@
+<configs>
+	<!-- ============================================================
+	     GAMESTAGE CONFIG OVERRIDES
+	     Recalibrate for 300-level progression system.
+	     ============================================================ -->
+
+	<!-- Remove difficultyBonus multiplier — our levels already provide scaling -->
+	<set xpath="/gamestages/config/@difficultyBonus">1.0</set>
+
+	<!-- Increase blood moon loot drops — more rewarding hordes -->
+	<set xpath="/gamestages/config/@lootBonusEvery">8</set>
+	<set xpath="/gamestages/config/@lootBonusMaxCount">40</set>
+	<set xpath="/gamestages/config/@lootBonusScale">30</set>
+
+	<!-- Increase wandering horde loot — more reason to fight roamers -->
+	<set xpath="/gamestages/config/@lootWanderingBonusEvery">2</set>
+	<set xpath="/gamestages/config/@lootWanderingBonusScale">20</set>
+
+</configs>

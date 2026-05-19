@@ -1,0 +1,114 @@
+<configs>
+	<!-- ============================================================
+	     ENTITY GROUP OVERRIDES
+	     
+	     entitygroups.xml uses plain text content (not XML attributes),
+	     so we replace entire group contents to adjust probabilities.
+	     
+	     Focus: Pine Forest safer, Wasteland more dangerous.
+	     ============================================================ -->
+
+	<!-- ============================
+	     PINE FOREST DOWNTOWN — Much fewer ferals (RPG safe zone)
+	     Vanilla had .1-.5 feral probability. We cut it to .02-.05.
+	     ============================ -->
+	<set xpath="/entitygroups/entitygroup[@name='ZombiesForestDowntown']">
+		zombieSpider
+		zombieSpiderFeral, .02
+		zombieBoe
+		zombieBoeFeral, .02
+		zombieJoe
+		zombieJoeFeral, .02
+		zombieSteve
+		zombieSteveFeral, .02
+		zombieTomClark
+		zombieTomClarkFeral, .02
+		zombieMoe
+		zombieMoeFeral, .02
+		zombieYo
+		zombieYoFeral, .02
+		zombieBusinessMan, 1.5
+		zombieBusinessManFeral, .03
+		zombieArlene
+		zombieArleneFeral, .02
+		zombieDarlene
+		zombieDarleneFeral, .02
+		zombieMarlene
+		zombieMarleneFeral, .02
+		zombieNurse
+		zombieNurseFeral, .02
+		zombiePartyGirl
+		zombiePartyGirlFeral, .02
+		zombieFatHawaiian
+		zombieFatHawaiianFeral, .02
+		zombieBowler, .1
+		zombieBowlerFeral, .02
+		zombieSteveCrawlerFeral, .02
+		zombieFatCop, .2
+		zombieFatCopFeral, .01
+		zombieSoldier, .2
+		zombieSoldierFeral, .01
+		animalZombieDog, .05
+		animalDireWolf, .02
+		animalWolf, .05
+	</set>
+
+	<!-- Pine Forest downtown NIGHT — slightly more ferals but still mild -->
+	<set xpath="/entitygroups/entitygroup[@name='ZombiesForestDowntownNight']">
+		zombieSpider
+		zombieSpiderFeral, .08
+		zombieBoe
+		zombieBoeFeral, .08
+		zombieJoe
+		zombieJoeFeral, .08
+		zombieSteve
+		zombieSteveFeral, .08
+		zombieTomClark
+		zombieTomClarkFeral, .08
+		zombieMoe
+		zombieMoeFeral, .08
+		zombieYo
+		zombieYoFeral, .08
+		zombieBusinessMan, 1.5
+		zombieBusinessManFeral, .1
+		zombieArlene
+		zombieArleneFeral, .08
+		zombieDarlene
+		zombieDarleneFeral, .08
+		zombieMarlene
+		zombieMarleneFeral, .08
+		zombieNurse
+		zombieNurseFeral, .08
+		zombiePartyGirl
+		zombiePartyGirlFeral, .08
+		zombieFatHawaiian
+		zombieFatHawaiianFeral, .08
+		zombieBowler, .1
+		zombieBowlerFeral, .05
+		zombieSteveCrawlerFeral, .1
+		zombieFatCop, .3
+		zombieFatCopFeral, .05
+		zombieSoldier, .3
+		zombieSoldierFeral, .05
+		animalZombieDog, .15
+		animalDireWolf, .05
+		animalWolf, .15
+	</set>
+
+	<!-- ============================
+	     WASTELAND — More dangerous with higher feral/radiated
+	     ============================ -->
+	<set xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']">
+		zombieMutated
+		zombieFatCop, .5
+		zombieMaleHazmat, .5
+		zombieMutatedFeral, .2
+		zombieMutatedRadiated, .15
+		zombieMutatedInfernal, .1
+		zombieMutatedCharged, .1
+		zombieWightFeral, .15
+		zombieSpider, .3
+		zombieSpiderFeral, .1
+	</set>
+
+</configs>
