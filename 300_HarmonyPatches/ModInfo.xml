@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+
+    <Name value="300_HarmonyPatches" />
+    <DisplayName value="Harmony Patches" />
+    <Description value="C# runtime patches for advanced mechanics" />
+    <Author value="Colton" />
+    <Version value="0.1.0" />
+
+</xml>

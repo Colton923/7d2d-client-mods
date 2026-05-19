@@ -1,5 +1,5 @@
 # Client Mod Manifest
-# Generated: 2026-05-19T01:46:40Z
+# Generated: 2026-05-19T12:57:38Z
 # Server: fedora
 #
 # Mod Name                       | Files | Size
@@ -9,8 +9,9 @@
 060_ProgressionOverhaul          |     3 | 120K
 070_GamestageOverhaul            |     4 | 20K
 0_TFP_Harmony                    |    14 | 2.2M
+300_HarmonyPatches               |     2 | 16K
 TFP_CommandExtensions            |     2 | 24K
 TFP_MapRendering                 |     2 | 40K
 TFP_WebServer                    |     3 | 460K
 Xample_MarkersMod                |     2 | 24K
-# Total: 9 mods, 35 files
+# Total: 10 mods, 37 files
