@@ -1,0 +1,17 @@
+Key,File,Type,UsedInXML,english
+resourceScrapedModFragments,items,Resource,true,Scraped Mod Fragments
+resourceScrapedModFragmentsDesc,items,Resource,true,"Dismantled components from basic trait-rolled gear. Can be assembled at a Workbench into basic calibration tools."
+resourceAdvancedModFragments,items,Resource,true,Advanced Mod Fragments
+resourceAdvancedModFragmentsDesc,items,Resource,true,"High-grade engineering components from superior trait-rolled gear. Can be assembled at a Workbench into advanced calibration tools."
+resourcePrototypeModFragments,items,Resource,true,Prototype Mod Fragments
+resourcePrototypeModFragmentsDesc,items,Resource,true,"Rare prototype modular components salvaged from legendary trait-rolled gear. Can be assembled at a Workbench into legendary prototype tools."
+toolChemicalAcidWash,items,Tool,true,Chemical Acid Wash
+toolChemicalAcidWashDesc,items,Tool,true,"A highly corrosive acid wash. Select a trait-rolled gear item in your inventory with this wash in your bag to wash away all trait modifications, restoring it to a clean base state."
+toolExperimentalCalibrationBlueprint,items,Tool,true,Experimental Calibration Blueprint
+toolExperimentalCalibrationBlueprintDesc,items,Tool,true,"An experimental calibration schematic. Select a clean, non-magical piece of gear in your inventory with this blueprint in your bag to infuse it with random quality-scaled traits."
+toolReengineeringKit,items,Tool,true,Mechanical Re-engineering Kit
+toolReengineeringKitDesc,items,Tool,true,"A toolkit of precision dials, gears, and calibration wiring. Select a magical piece of gear in your inventory with this kit in your bag to completely shuffle all prefix/suffix traits."
+toolPrecisionCalibrationDevice,items,Tool,true,Precision Calibration Device
+toolPrecisionCalibrationDeviceDesc,items,Tool,true,"A calibration dial designed to adjust specific affix channels. Select a piece of gear with open trait slots in your inventory with this device in your bag to inject a single random trait."
+toolIndustrialOverhaulBlueprint,items,Tool,true,Industrial Overhaul Blueprint
+toolIndustrialOverhaulBlueprintDesc,items,Tool,true,"A military-grade experimental schematic. Select a magical piece of gear in your inventory with this blueprint in your bag to completely re-engineer all traits, guaranteeing at least one Legendary-tier trait."

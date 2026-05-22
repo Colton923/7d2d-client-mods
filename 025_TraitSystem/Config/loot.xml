@@ -1,0 +1,213 @@
+<configs>
+	<!-- ============================================================
+	     TRAIT SYSTEM LOOT INTEGRATION
+	     
+	     Injects mod fragments and crafting tools into the world's
+	     loot economy. Drop sources are tiered by container rarity:
+	     
+	     - Green fragments: common zombie packs, garages, toolboxes
+	     - Blue fragments: soldier/thug packs, weapon crates, safes
+	     - Orange fragments: boss/plague packs, hidden stashes, airdrops
+	     - Crafting tools: workbenches, military containers, safes
+	     ============================================================ -->
+
+
+	<!-- ============================
+	     ZOMBIE PACK LOOT — Mod Fragments
+	     Fragments drop alongside normal zombie loot.
+	     Probability scales with zombie type rarity.
+	     ============================ -->
+
+	<!-- Regular zombies: small chance for green fragments -->
+	<append xpath="/lootcontainers/lootcontainer[@name='zPackReg']">
+		<item name="resourceScrapedModFragments" count="1,3" prob="0.08"/>
+	</append>
+
+	<!-- Nurse zombies: green fragments (slightly better) -->
+	<append xpath="/lootcontainers/lootcontainer[@name='zPackNurse']">
+		<item name="resourceScrapedModFragments" count="1,4" prob="0.12"/>
+	</append>
+
+	<!-- Lab zombies: green + small chance for blue -->
+	<append xpath="/lootcontainers/lootcontainer[@name='zPackLab']">
+		<item name="resourceScrapedModFragments" count="1,4" prob="0.15"/>
+		<item name="resourceAdvancedModFragments" count="1,2" prob="0.04"/>
+	</append>
+
+	<!-- Utility zombies: green fragments -->
+	<append xpath="/lootcontainers/lootcontainer[@name='zPackUtility']">
+		<item name="resourceScrapedModFragments" count="1,4" prob="0.12"/>
+	</append>
+
+	<!-- Soldier zombies: blue fragments + small chance green -->
+	<append xpath="/lootcontainers/lootcontainer[@name='zPackSoldier']">
+		<item name="resourceScrapedModFragments" count="2,5" prob="0.15"/>
+		<item name="resourceAdvancedModFragments" count="1,3" prob="0.08"/>
+	</append>
+
+	<!-- Thug zombies: blue fragments -->
+	<append xpath="/lootcontainers/lootcontainer[@name='zPackThug']">
+		<item name="resourceScrapedModFragments" count="2,4" prob="0.12"/>
+		<item name="resourceAdvancedModFragments" count="1,2" prob="0.06"/>
+	</append>
+
+	<!-- Strong zombies: blue + small chance orange -->
+	<append xpath="/lootcontainers/lootcontainer[@name='zPackStrong']">
+		<item name="resourceAdvancedModFragments" count="1,3" prob="0.15"/>
+		<item name="resourcePrototypeModFragments" count="1" prob="0.03"/>
+	</append>
+
+	<!-- Boss zombies: guaranteed blue + good chance orange -->
+	<append xpath="/lootcontainers/lootcontainer[@name='zPackBoss']">
+		<item name="resourceAdvancedModFragments" count="2,5" prob="0.30"/>
+		<item name="resourcePrototypeModFragments" count="1,2" prob="0.10"/>
+	</append>
+
+	<!-- Plague zombies: guaranteed blue + good chance orange -->
+	<append xpath="/lootcontainers/lootcontainer[@name='zPackPlague']">
+		<item name="resourceAdvancedModFragments" count="2,5" prob="0.25"/>
+		<item name="resourcePrototypeModFragments" count="1,2" prob="0.08"/>
+	</append>
+
+
+	<!-- ============================
+	     WORKBENCH / GARAGE — Tier 1 Tools
+	     Collapsed workbenches and garages can contain
+	     Acid Wash or Calibration Blueprints.
+	     ============================ -->
+
+	<append xpath="/lootcontainers/lootcontainer[@name='collapsedWorkbench']">
+		<item name="toolChemicalAcidWash" count="1" prob="0.06"/>
+		<item name="toolExperimentalCalibrationBlueprint" count="1" prob="0.05"/>
+		<item name="resourceScrapedModFragments" count="2,6" prob="0.12"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@name='garage']">
+		<item name="resourceScrapedModFragments" count="1,3" prob="0.08"/>
+		<item name="toolChemicalAcidWash" count="1" prob="0.03"/>
+	</append>
+
+	<!-- Rolling toolboxes and regular toolboxes -->
+	<append xpath="/lootcontainers/lootcontainer[@name='rollingToolBox']">
+		<item name="resourceScrapedModFragments" count="1,3" prob="0.10"/>
+		<item name="toolChemicalAcidWash" count="1" prob="0.04"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@name='toolBox']">
+		<item name="resourceScrapedModFragments" count="1,2" prob="0.08"/>
+	</append>
+
+
+	<!-- ============================
+	     WEAPON CRATES — Tier 2 Tools
+	     Shotgun Messiah and Working Stiffs crates
+	     can contain Re-engineering Kits and Precision Devices.
+	     ============================ -->
+
+	<append xpath="/lootcontainers/lootcontainer[@name='shotgunMessiahCrate']">
+		<item name="resourceAdvancedModFragments" count="1,3" prob="0.08"/>
+		<item name="toolReengineeringKit" count="1" prob="0.03"/>
+		<item name="toolPrecisionCalibrationDevice" count="1" prob="0.02"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@name='workingStiffsCrate']">
+		<item name="resourceScrapedModFragments" count="2,5" prob="0.10"/>
+		<item name="resourceAdvancedModFragments" count="1,2" prob="0.05"/>
+		<item name="toolReengineeringKit" count="1" prob="0.02"/>
+	</append>
+
+	<!-- Gun racks and weapon bags -->
+	<append xpath="/lootcontainers/lootcontainer[@name='gunRack']">
+		<item name="resourceAdvancedModFragments" count="1,2" prob="0.06"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@name='weaponsBagSmall']">
+		<item name="resourceScrapedModFragments" count="1,3" prob="0.10"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@name='weaponsBagLarge']">
+		<item name="resourceAdvancedModFragments" count="1,3" prob="0.08"/>
+		<item name="toolReengineeringKit" count="1" prob="0.03"/>
+	</append>
+
+
+	<!-- ============================
+	     MILITARY CONTAINERS — Tier 2-3 Tools
+	     Military footlockers, shelves, and army trucks
+	     can contain advanced tools and orange fragments.
+	     ============================ -->
+
+	<append xpath="/lootcontainers/lootcontainer[@name='militaryFootlocker']">
+		<item name="resourceAdvancedModFragments" count="1,4" prob="0.12"/>
+		<item name="resourcePrototypeModFragments" count="1" prob="0.04"/>
+		<item name="toolPrecisionCalibrationDevice" count="1" prob="0.04"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@name='militaryShelves']">
+		<item name="resourceAdvancedModFragments" count="1,3" prob="0.10"/>
+		<item name="toolReengineeringKit" count="1" prob="0.03"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@name='armyTruck']">
+		<item name="resourceAdvancedModFragments" count="2,5" prob="0.15"/>
+		<item name="resourcePrototypeModFragments" count="1,2" prob="0.05"/>
+		<item name="toolPrecisionCalibrationDevice" count="1" prob="0.04"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@name='munitions']">
+		<item name="resourceAdvancedModFragments" count="1,3" prob="0.08"/>
+	</append>
+
+
+	<!-- ============================
+	     SAFES & HIGH-VALUE CONTAINERS — Tier 3 Tools
+	     Gun safes and hidden stashes can contain the
+	     rare Industrial Overhaul Blueprint.
+	     ============================ -->
+
+	<append xpath="/lootcontainers/lootcontainer[@name='gunSafe']">
+		<item name="resourceAdvancedModFragments" count="2,5" prob="0.15"/>
+		<item name="resourcePrototypeModFragments" count="1,3" prob="0.08"/>
+		<item name="toolReengineeringKit" count="1" prob="0.05"/>
+		<item name="toolPrecisionCalibrationDevice" count="1" prob="0.04"/>
+		<item name="toolIndustrialOverhaulBlueprint" count="1" prob="0.02"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@name='smallSafes']">
+		<item name="resourceAdvancedModFragments" count="1,3" prob="0.10"/>
+		<item name="resourcePrototypeModFragments" count="1" prob="0.04"/>
+		<item name="toolReengineeringKit" count="1" prob="0.03"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@name='hiddenStash']">
+		<item name="resourcePrototypeModFragments" count="1,3" prob="0.12"/>
+		<item name="toolPrecisionCalibrationDevice" count="1" prob="0.05"/>
+		<item name="toolIndustrialOverhaulBlueprint" count="1" prob="0.03"/>
+	</append>
+
+
+	<!-- ============================
+	     AIRDROP — Guaranteed fragments + rare Tier 3 tool
+	     Airdrops should always feel rewarding.
+	     ============================ -->
+
+	<append xpath="/lootcontainers/lootcontainer[@name='airDrop']">
+		<item name="resourceAdvancedModFragments" count="3,8" prob="0.40"/>
+		<item name="resourcePrototypeModFragments" count="1,3" prob="0.15"/>
+		<item name="toolReengineeringKit" count="1" prob="0.08"/>
+		<item name="toolPrecisionCalibrationDevice" count="1" prob="0.06"/>
+		<item name="toolIndustrialOverhaulBlueprint" count="1" prob="0.03"/>
+	</append>
+
+
+	<!-- ============================
+	     BURIED TREASURE — Guaranteed orange + tool chance
+	     Treasure quests should reward the effort.
+	     ============================ -->
+
+	<append xpath="/lootcontainers/lootcontainer[@name='buriedTreasure']">
+		<item name="resourcePrototypeModFragments" count="2,5" prob="0.25"/>
+		<item name="toolIndustrialOverhaulBlueprint" count="1" prob="0.05"/>
+	</append>
+
+</configs>

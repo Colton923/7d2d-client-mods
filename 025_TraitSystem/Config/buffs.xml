@@ -1,0 +1,49 @@
+<configs>
+	<!-- ============================================================
+	     TRAIT SYSTEM — Custom Buffs for Active Combat Triggers
+	     
+	     These lightweight buffs are applied by the ActiveTraitEngine
+	     when combat triggers fire. They provide short-duration combat
+	     bonuses that make trait-rolled gear feel impactful in the field.
+	     ============================================================ -->
+
+	<!-- Adrenaline Surge: +20% movement speed for 6s after a kill -->
+	<append xpath="/buffs">
+		<buff name="buffTraitAdrenalineSurge" name_key="buffTraitAdrenalineSurge" duration="6" stack="discard" icon="ui_game_symbol_run" icon_color="200,255,100">
+			<effect_group>
+				<passive_effect name="RunSpeed" operation="perc_add" value=".20"/>
+				<passive_effect name="JumpStrength" operation="perc_add" value=".10"/>
+			</effect_group>
+		</buff>
+	</append>
+
+	<!-- Combat High: +15% attack speed for 5s after a kill -->
+	<append xpath="/buffs">
+		<buff name="buffTraitCombatHigh" name_key="buffTraitCombatHigh" duration="5" stack="discard" icon="ui_game_symbol_natural_healing" icon_color="255,180,80">
+			<effect_group>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".15"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.10"/>
+			</effect_group>
+		</buff>
+	</append>
+
+	<!-- Fight-or-Flight: +25% sprint speed for 4s when taking damage -->
+	<append xpath="/buffs">
+		<buff name="buffTraitFightOrFlight" name_key="buffTraitFightOrFlight" duration="4" stack="discard" icon="ui_game_symbol_run" icon_color="255,100,100">
+			<effect_group>
+				<passive_effect name="RunSpeed" operation="perc_add" value=".25"/>
+			</effect_group>
+		</buff>
+	</append>
+
+	<!-- Ablative Plating: +12% general damage resist for 5s when taking damage -->
+	<append xpath="/buffs">
+		<buff name="buffTraitAblativePlating" name_key="buffTraitAblativePlating" duration="5" stack="discard" icon="ui_game_symbol_shield" icon_color="150,180,220">
+			<effect_group>
+				<passive_effect name="GeneralDamageResist" operation="perc_add" value=".12"/>
+				<passive_effect name="PhysicalDamageResist" operation="perc_add" value=".08"/>
+			</effect_group>
+		</buff>
+	</append>
+
+</configs>

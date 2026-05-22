@@ -1,0 +1,29 @@
+<configs>
+    <append xpath="/recipes">
+        <!-- Chemical Acid Wash Crafting -->
+        <recipe name="toolChemicalAcidWash" count="1" craft_area="workbench" tags="workbenchCrafting">
+            <ingredient name="resourceScrapedModFragments" count="10"/>
+            <ingredient name="resourceAcid" count="1"/>
+        </recipe>
+
+        <!-- Experimental Calibration Blueprint Crafting -->
+        <recipe name="toolExperimentalCalibrationBlueprint" count="1" craft_area="workbench" tags="workbenchCrafting">
+            <ingredient name="resourceScrapedModFragments" count="15"/>
+        </recipe>
+
+        <!-- Mechanical Re-engineering Kit Crafting -->
+        <recipe name="toolReengineeringKit" count="1" craft_area="workbench" tags="workbenchCrafting">
+            <ingredient name="resourceAdvancedModFragments" count="15"/>
+        </recipe>
+
+        <!-- Precision Calibration Device Crafting -->
+        <recipe name="toolPrecisionCalibrationDevice" count="1" craft_area="workbench" tags="workbenchCrafting">
+            <ingredient name="resourceAdvancedModFragments" count="20"/>
+        </recipe>
+
+        <!-- Industrial Overhaul Blueprint Crafting -->
+        <recipe name="toolIndustrialOverhaulBlueprint" count="1" craft_area="workbench" tags="workbenchCrafting">
+            <ingredient name="resourcePrototypeModFragments" count="10"/>
+        </recipe>
+    </append>
+</configs>

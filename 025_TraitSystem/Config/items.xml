@@ -1,0 +1,115 @@
+<configs>
+    <append xpath="/items">
+        <!-- Tier 1: Scraped Mod Fragments (Green Rarity) -->
+        <item name="resourceScrapedModFragments">
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+            <property name="DropScale" value="0.5"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Stacknumber" value="1000"/>
+            <property name="EconomicValue" value="5"/>
+            <property name="CustomIcon" value="resourceMechanicalParts"/>
+            <property name="CustomIconTint" value="88FF88"/>
+            <property name="DescriptionKey" value="resourceScrapedModFragmentsDesc"/>
+            <property name="Group" value="Resources"/>
+        </item>
+
+        <!-- Tier 2: Advanced Mod Fragments (Blue Rarity) -->
+        <item name="resourceAdvancedModFragments">
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+            <property name="DropScale" value="0.5"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Stacknumber" value="1000"/>
+            <property name="EconomicValue" value="25"/>
+            <property name="CustomIcon" value="resourceMilitaryFiber"/>
+            <property name="CustomIconTint" value="8888FF"/>
+            <property name="DescriptionKey" value="resourceAdvancedModFragmentsDesc"/>
+            <property name="Group" value="Resources"/>
+        </item>
+
+        <!-- Tier 3: Prototype Mod Fragments (Orange Rarity) -->
+        <item name="resourcePrototypeModFragments">
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+            <property name="DropScale" value="0.5"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Stacknumber" value="1000"/>
+            <property name="EconomicValue" value="100"/>
+            <property name="CustomIcon" value="resourceElectricParts"/>
+            <property name="CustomIconTint" value="FFAA00"/>
+            <property name="DescriptionKey" value="resourcePrototypeModFragmentsDesc"/>
+            <property name="Group" value="Resources"/>
+        </item>
+
+        <!-- Tool: Chemical Acid Wash -->
+        <item name="toolChemicalAcidWash">
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+            <property name="DropScale" value="0.5"/>
+            <property name="Material" value="Mglass"/>
+            <property name="Stacknumber" value="50"/>
+            <property name="EconomicValue" value="80"/>
+            <property name="CustomIcon" value="resourceAcid"/>
+            <property name="CustomIconTint" value="FF5555"/>
+            <property name="DescriptionKey" value="toolChemicalAcidWashDesc"/>
+            <property name="Group" value="Science,Tools"/>
+        </item>
+
+        <!-- Tool: Experimental Calibration Blueprint -->
+        <item name="toolExperimentalCalibrationBlueprint">
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+            <property name="DropScale" value="0.5"/>
+            <property name="Material" value="Mpaper"/>
+            <property name="Stacknumber" value="50"/>
+            <property name="EconomicValue" value="100"/>
+            <property name="CustomIcon" value="schematicMaster"/>
+            <property name="CustomIconTint" value="88FF88"/>
+            <property name="DescriptionKey" value="toolExperimentalCalibrationBlueprintDesc"/>
+            <property name="Group" value="Science,Tools"/>
+        </item>
+
+        <!-- Tool: Mechanical Re-engineering Kit -->
+        <item name="toolReengineeringKit">
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="@:Other/Items/Tools/repair_kitPrefab.prefab"/>
+            <property name="DropScale" value="0.5"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Stacknumber" value="50"/>
+            <property name="EconomicValue" value="300"/>
+            <property name="CustomIcon" value="toolRepairKit"/>
+            <property name="CustomIconTint" value="8888FF"/>
+            <property name="DescriptionKey" value="toolReengineeringKitDesc"/>
+            <property name="Group" value="Science,Tools"/>
+        </item>
+
+        <!-- Tool: Precision Calibration Device -->
+        <item name="toolPrecisionCalibrationDevice">
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="@:Other/Items/Tools/repair_kitPrefab.prefab"/>
+            <property name="DropScale" value="0.5"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Stacknumber" value="50"/>
+            <property name="EconomicValue" value="500"/>
+            <property name="CustomIcon" value="toolRepairKit"/>
+            <property name="CustomIconTint" value="3333FF"/>
+            <property name="DescriptionKey" value="toolPrecisionCalibrationDeviceDesc"/>
+            <property name="Group" value="Science,Tools"/>
+        </item>
+
+        <!-- Tool: Industrial Overhaul Blueprint -->
+        <item name="toolIndustrialOverhaulBlueprint">
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+            <property name="DropScale" value="0.5"/>
+            <property name="Material" value="Mpaper"/>
+            <property name="Stacknumber" value="50"/>
+            <property name="EconomicValue" value="1000"/>
+            <property name="CustomIcon" value="schematicMaster"/>
+            <property name="CustomIconTint" value="FFAA00"/>
+            <property name="DescriptionKey" value="toolIndustrialOverhaulBlueprintDesc"/>
+            <property name="Group" value="Science,Tools"/>
+        </item>
+    </append>
+</configs>
