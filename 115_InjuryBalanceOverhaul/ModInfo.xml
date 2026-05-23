@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml>
+    <Name value="115_InjuryBalanceOverhaul" />
+    <DisplayName value="Injury Balance Overhaul" />
+    <Version value="1.0.0" />
+    <Description value="Reduces sprained/broken limb durations and fixes display timer calculation to prevent 8000-hour display bugs." />
+    <Author value="ServerAdmin" />
+</xml>

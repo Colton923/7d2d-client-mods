@@ -1,0 +1,95 @@
+<configs>
+
+<!-- ============================================================ -->
+<!-- 115_InjuryBalanceOverhaul                                     -->
+<!-- Reduces sprained/broken limb durations significantly.         -->
+<!-- Adds safety clamp to display timer to prevent divide-by-zero. -->
+<!-- ============================================================ -->
+
+<!-- ============================================================ -->
+<!-- SPRAINED LEG: Reduce counter from 605 → 120 (~2 min base)    -->
+<!-- ============================================================ -->
+
+<!-- Initial counter set -->
+<set xpath="/buffs/buff[@name='buffLegSprained']/effect_group/triggered_effect[@trigger='onSelfBuffStart' and @cvar='$legHurtCounter' and @value='605']/@value">120</set>
+
+<!-- Stack restart counter -->
+<set xpath="/buffs/buff[@name='buffLegSprained']/effect_group/triggered_effect[@trigger='onSelfBuffStack' and @cvar='$legHurtCounter' and @value='605']/@value">120</set>
+
+<!-- Stack restart requirement check -->
+<set xpath="/buffs/buff[@name='buffLegSprained']/effect_group/triggered_effect[@trigger='onSelfBuffStack' and @cvar='$legHurtCounter']/requirement[@cvar='$legHurtCounter' and @value='605']/@value">120</set>
+
+<!-- Clamp counter ceiling -->
+<set xpath="/buffs/buff[@name='buffLegSprained']/effect_group[@name='activity makes damaged legs worse']/triggered_effect[@trigger='onSelfBuffUpdate' and @cvar='$legHurtCounter' and @value='605']/@value">120</set>
+<set xpath="/buffs/buff[@name='buffLegSprained']/effect_group[@name='activity makes damaged legs worse']/triggered_effect[@trigger='onSelfBuffUpdate' and @cvar='$legHurtCounter']/requirement[@cvar='$legHurtCounter' and @value='605']/@value">120</set>
+
+<!-- ============================================================ -->
+<!-- SPRAINED LEG: Fix display timer — clamp healing rate floor   -->
+<!-- Insert before the display division to ensure rate >= 1       -->
+<!-- ============================================================ -->
+
+<insertBefore xpath="/buffs/buff[@name='buffLegSprained']/effect_group[@name='DisplayDuration']/triggered_effect[@trigger='onSelfBuffUpdate' and @cvar='.legHurtDurationDisplay' and @operation='divide']">
+    <!-- Safety: if critHitNaturalHealingRate is 0 or unset, default to 1 to prevent insane display values -->
+    <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="1">
+        <requirement name="CVarCompare" cvar="$critHitNaturalHealingRate" operation="LTE" value="0"/>
+    </triggered_effect>
+</insertBefore>
+
+<!-- ============================================================ -->
+<!-- BROKEN LEG: Reduce counter from 7208 → 1800 (~30 min base)  -->
+<!-- ============================================================ -->
+
+<!-- Initial counter set -->
+<set xpath="/buffs/buff[@name='buffLegBroken']/effect_group/triggered_effect[@trigger='onSelfBuffStart' and @cvar='$legHurtCounter' and @value='7208']/requirement[@cvar='$legHurtCounter' and @value='7208']/@value">1800</set>
+<set xpath="/buffs/buff[@name='buffLegBroken']/effect_group/triggered_effect[@trigger='onSelfBuffStart' and @cvar='$legHurtCounter' and @value='7208']/@value">1800</set>
+
+<!-- Stack counter set -->
+<set xpath="/buffs/buff[@name='buffLegBroken']/effect_group/triggered_effect[@trigger='onSelfBuffStack' and @cvar='$legHurtCounter' and @value='7208']/requirement[@cvar='$legHurtCounter' and @value='7208']/@value">1800</set>
+<set xpath="/buffs/buff[@name='buffLegBroken']/effect_group/triggered_effect[@trigger='onSelfBuffStack' and @cvar='$legHurtCounter' and @value='7208']/@value">1800</set>
+
+<!-- Broken leg display timer safety clamp -->
+<insertBefore xpath="/buffs/buff[@name='buffLegBroken']/effect_group[@name='DisplayDuration']/triggered_effect[@trigger='onSelfBuffUpdate' and @cvar='.legHurtDurationDisplay' and @operation='divide']">
+    <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="1">
+        <requirement name="CVarCompare" cvar="$critHitNaturalHealingRate" operation="LTE" value="0"/>
+    </triggered_effect>
+</insertBefore>
+
+<!-- ============================================================ -->
+<!-- SPRAINED ARM: Reduce counter (same pattern as leg)           -->
+<!-- We need to find the arm sprained buff and reduce similarly   -->
+<!-- ============================================================ -->
+
+<!-- Sprained arm counter: 605 → 120 -->
+<set xpath="/buffs/buff[@name='buffArmSprained']/effect_group/triggered_effect[@trigger='onSelfBuffStart' and @cvar='$armHurtCounter' and @value='605']/@value">120</set>
+<set xpath="/buffs/buff[@name='buffArmSprained']/effect_group/triggered_effect[@trigger='onSelfBuffStack' and @cvar='$armHurtCounter' and @value='605']/@value">120</set>
+<set xpath="/buffs/buff[@name='buffArmSprained']/effect_group/triggered_effect[@trigger='onSelfBuffStack' and @cvar='$armHurtCounter']/requirement[@cvar='$armHurtCounter' and @value='605']/@value">120</set>
+
+<!-- Sprained arm clamp -->
+<set xpath="/buffs/buff[@name='buffArmSprained']/effect_group[@name='activity makes damaged arms worse']/triggered_effect[@trigger='onSelfBuffUpdate' and @cvar='$armHurtCounter' and @value='605']/@value">120</set>
+<set xpath="/buffs/buff[@name='buffArmSprained']/effect_group[@name='activity makes damaged arms worse']/triggered_effect[@trigger='onSelfBuffUpdate' and @cvar='$armHurtCounter']/requirement[@cvar='$armHurtCounter' and @value='605']/@value">120</set>
+
+<!-- Sprained arm display timer safety clamp -->
+<insertBefore xpath="/buffs/buff[@name='buffArmSprained']/effect_group[@name='DisplayDuration']/triggered_effect[@trigger='onSelfBuffUpdate' and @cvar='.armHurtDurationDisplay' and @operation='divide']">
+    <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="1">
+        <requirement name="CVarCompare" cvar="$critHitNaturalHealingRate" operation="LTE" value="0"/>
+    </triggered_effect>
+</insertBefore>
+
+<!-- ============================================================ -->
+<!-- BROKEN ARM: Reduce counter from 7208 → 1800                  -->
+<!-- ============================================================ -->
+
+<set xpath="/buffs/buff[@name='buffArmBroken']/effect_group/triggered_effect[@trigger='onSelfBuffStart' and @cvar='$armHurtCounter' and @value='7208']/requirement[@cvar='$armHurtCounter' and @value='7208']/@value">1800</set>
+<set xpath="/buffs/buff[@name='buffArmBroken']/effect_group/triggered_effect[@trigger='onSelfBuffStart' and @cvar='$armHurtCounter' and @value='7208']/@value">1800</set>
+
+<set xpath="/buffs/buff[@name='buffArmBroken']/effect_group/triggered_effect[@trigger='onSelfBuffStack' and @cvar='$armHurtCounter' and @value='7208']/requirement[@cvar='$armHurtCounter' and @value='7208']/@value">1800</set>
+<set xpath="/buffs/buff[@name='buffArmBroken']/effect_group/triggered_effect[@trigger='onSelfBuffStack' and @cvar='$armHurtCounter' and @value='7208']/@value">1800</set>
+
+<!-- Broken arm display timer safety clamp -->
+<insertBefore xpath="/buffs/buff[@name='buffArmBroken']/effect_group[@name='DisplayDuration']/triggered_effect[@trigger='onSelfBuffUpdate' and @cvar='.armHurtDurationDisplay' and @operation='divide']">
+    <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="1">
+        <requirement name="CVarCompare" cvar="$critHitNaturalHealingRate" operation="LTE" value="0"/>
+    </triggered_effect>
+</insertBefore>
+
+</configs>
