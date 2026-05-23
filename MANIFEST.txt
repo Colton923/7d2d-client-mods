@@ -1,5 +1,5 @@
 # Client Mod Manifest
-# Generated: 2026-05-23T03:02:16Z
+# Generated: 2026-05-23T03:06:25Z
 # Server: fedora
 #
 # Mod Name                       | Files | Size
@@ -11,7 +11,7 @@
 070_GamestageOverhaul            |     4 | 20K
 0_TFP_Harmony                    |    14 | 2.2M
 115_InjuryBalanceOverhaul        |     2 | 12K
-300_HarmonyPatches               |     2 | 32K
+300_HarmonyPatches               |     2 | 36K
 TFP_CommandExtensions            |     2 | 24K
 TFP_MapRendering                 |     2 | 40K
 TFP_WebServer                    |     3 | 460K
