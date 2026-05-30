@@ -8,8 +8,7 @@
             <property name="Material" value="Mmetal"/>
             <property name="Stacknumber" value="1000"/>
             <property name="EconomicValue" value="5"/>
-            <property name="CustomIcon" value="resourceMechanicalParts"/>
-            <property name="CustomIconTint" value="88FF88FF"/>
+            <property name="CustomIcon" value="resourceScrapedModFragments"/>
             <property name="DescriptionKey" value="resourceScrapedModFragmentsDesc"/>
             <property name="Group" value="Resources"/>
         </item>
@@ -22,8 +21,7 @@
             <property name="Material" value="Mmetal"/>
             <property name="Stacknumber" value="1000"/>
             <property name="EconomicValue" value="25"/>
-            <property name="CustomIcon" value="resourceMilitaryFiber"/>
-            <property name="CustomIconTint" value="8888FFFF"/>
+            <property name="CustomIcon" value="resourceAdvancedModFragments"/>
             <property name="DescriptionKey" value="resourceAdvancedModFragmentsDesc"/>
             <property name="Group" value="Resources"/>
         </item>
@@ -36,8 +34,7 @@
             <property name="Material" value="Mmetal"/>
             <property name="Stacknumber" value="1000"/>
             <property name="EconomicValue" value="100"/>
-            <property name="CustomIcon" value="resourceElectricParts"/>
-            <property name="CustomIconTint" value="FFAA00FF"/>
+            <property name="CustomIcon" value="resourcePrototypeModFragments"/>
             <property name="DescriptionKey" value="resourcePrototypeModFragmentsDesc"/>
             <property name="Group" value="Resources"/>
         </item>
@@ -50,8 +47,7 @@
             <property name="Material" value="Mglass"/>
             <property name="Stacknumber" value="50"/>
             <property name="EconomicValue" value="80"/>
-            <property name="CustomIcon" value="resourceAcid"/>
-            <property name="CustomIconTint" value="FF5555FF"/>
+            <property name="CustomIcon" value="toolChemicalAcidWash"/>
             <property name="DescriptionKey" value="toolChemicalAcidWashDesc"/>
             <property name="Group" value="Science,Tools"/>
         </item>
@@ -64,8 +60,7 @@
             <property name="Material" value="Mpaper"/>
             <property name="Stacknumber" value="50"/>
             <property name="EconomicValue" value="100"/>
-            <property name="CustomIcon" value="schematicMaster"/>
-            <property name="CustomIconTint" value="88FF88FF"/>
+            <property name="CustomIcon" value="toolExperimentalCalibrationBlueprint"/>
             <property name="DescriptionKey" value="toolExperimentalCalibrationBlueprintDesc"/>
             <property name="Group" value="Science,Tools"/>
         </item>
@@ -78,8 +73,7 @@
             <property name="Material" value="Mmetal"/>
             <property name="Stacknumber" value="50"/>
             <property name="EconomicValue" value="300"/>
-            <property name="CustomIcon" value="toolRepairKit"/>
-            <property name="CustomIconTint" value="8888FFFF"/>
+            <property name="CustomIcon" value="toolReengineeringKit"/>
             <property name="DescriptionKey" value="toolReengineeringKitDesc"/>
             <property name="Group" value="Science,Tools"/>
         </item>
@@ -92,8 +86,7 @@
             <property name="Material" value="Mmetal"/>
             <property name="Stacknumber" value="50"/>
             <property name="EconomicValue" value="500"/>
-            <property name="CustomIcon" value="toolRepairKit"/>
-            <property name="CustomIconTint" value="3333FFFF"/>
+            <property name="CustomIcon" value="toolPrecisionCalibrationDevice"/>
             <property name="DescriptionKey" value="toolPrecisionCalibrationDeviceDesc"/>
             <property name="Group" value="Science,Tools"/>
         </item>
@@ -106,8 +99,7 @@
             <property name="Material" value="Mpaper"/>
             <property name="Stacknumber" value="50"/>
             <property name="EconomicValue" value="1000"/>
-            <property name="CustomIcon" value="schematicMaster"/>
-            <property name="CustomIconTint" value="FFAA00FF"/>
+            <property name="CustomIcon" value="toolIndustrialOverhaulBlueprint"/>
             <property name="DescriptionKey" value="toolIndustrialOverhaulBlueprintDesc"/>
             <property name="Group" value="Science,Tools"/>
         </item>
