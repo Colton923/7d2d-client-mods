@@ -1,11 +1,11 @@
 # Client Mod Manifest
-# Generated: 2026-05-30T01:48:51Z
+# Generated: 2026-05-30T17:04:45Z
 # Server: fedora
 #
 # Mod Name                       | Files | Size
 # -------------------------------|-------|------
 020_WeaponOverhaul               |     2 | 488K
-025_TraitSystem                  |     8 | 112K
+025_TraitSystem                  |    24 | 10M
 050_LootOverhaul                 |     3 | 20K
 060_ProgressionOverhaul          |     3 | 120K
 070_GamestageOverhaul            |     3 | 12K
@@ -17,4 +17,4 @@ TFP_CommandExtensions            |     2 | 24K
 TFP_MapRendering                 |     2 | 40K
 TFP_WebServer                    |     3 | 460K
 Xample_MarkersMod                |     2 | 24K
-# Total: 13 mods, 48 files
+# Total: 13 mods, 64 files
